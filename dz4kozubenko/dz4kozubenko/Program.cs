@@ -5,8 +5,8 @@ namespace dz4kozubenko
 {
      class Program
     {
-        static int A = -20;
-        static int B = 20;
+        static int A = -2;
+        static int B = 0;
         static void Main(string[] args)
         {
             Console.WriteLine("Выберите часть задания (1/2):");
@@ -57,13 +57,13 @@ namespace dz4kozubenko
                 }
                 if (first == last)
                 {
-                    Console.WriteLine("\nНедостаточно положительных элементов");
+                    Console.Write("\nНедостаточно положительных элементов");
                 }
                 for (int i = first + 1; i < last; i++)
                 {
                     result += array[i];
                 }
-                Console.Write("Сумма элементов, между первым и последним: ");
+                Console.Write("\nСумма элементов, между первым и последним: ");
                 Console.Write("{0:F2}", result);
                 Console.WriteLine();
 
